@@ -1,25 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jan 23 13:17:34 2018
+Created on Tue Mar 27 10:17:56 2018
 
 @author: sharda
 """
-
-data=[]
-for i in range(10):
-    l={}
-    for i in range(5):
-        name=input("name")
-        l["name"]=name
-        roll no=input("roll no")
-        l["roll no"]=roll no
-        course=input("course")
-        l["course"]=course
-        address=input("address")
-        l["address"]=address
-        mobile no=input("mobile no")
-        l["mobile no"]=input("mobile no")
-        cgpa=input("cgpa")
-        l["cgpa"]=input("cgpa")
-        data.append(l)
-        
+def perfect():
+    n = int(input("Enter any number: "))
+    sum1 = 0
+    for i in range(1, n):
+        if(n % i == 0):
+            sum1 = sum1 + i
+    if (sum1 == n):
+        print("The number is a Perfect number!")
+    else:
+        print("The number is not a Perfect number!")

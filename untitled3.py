@@ -1,4 +1,14 @@
-a=[x**2 for x in range(1,11)]
-b=[x**3 for x in range(1,11)]
-c=[t for t in a if t%2==0]
-print(c)
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 27 09:39:33 2018
+
+@author: sharda
+"""
+def fun2(x):
+    x=int(input("Enter the number:"))
+    f=1
+    for i in range(2,x):
+        f=f*i
+    a[x] = f
+a={}
+print(fun2(a))   
